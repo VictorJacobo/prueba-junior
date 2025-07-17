@@ -1,154 +1,61 @@
-<div align="center">
-   <div >
-      <img style="background-color: #000; display: inline-block; padding: 10px; border-radius: 8px;" width="500" src="assets/logo.png" alt="Snowworm Logo">
-   </div>
-   <br>
-   <br>
-    <h1 width="200">Prueba Técnica - Desarrollador Junior</h1>
-   <p>La siguiente prueba evaluará tus habilidades técnicas en el desarrollo web con Laravel y Tailwind CSS.</p>
-   <br>
-</div>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-## 🎯 Objetivo
+<p align="center">
+<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+</p>
 
-Desarrollar una aplicación web para gestión de inventario que demuestre:
+## About Laravel
 
-1. Capacidad para implementar funcionalidades básicas en Laravel
-2. Habilidad para crear interfaces responsivas con Tailwind CSS
-3. Comprensión de conceptos fundamentales de desarrollo web
-4. Aplicación de buenas prácticas de programación
+Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
 
----
+- [Simple, fast routing engine](https://laravel.com/docs/routing).
+- [Powerful dependency injection container](https://laravel.com/docs/container).
+- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
+- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
+- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
+- [Robust background job processing](https://laravel.com/docs/queues).
+- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-## 📋 Requisitos Técnicos
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
-### 🔒 Módulo de Autenticación
-- [ ] Sistema de registro/login con validación
-- [ ] Protección de rutas para usuarios no autenticados
-- [ ] Perfil básico del usuario (nombre, email, fecha de registro)
-- [ ] Opción de cerrar sesión
+## Learning Laravel
 
-### 🛍️ Gestión de Categorías (CRUD Completo)
-- [ ] Creación de categorías con campos:
-  - Nombre (requerido, máximo 100 caracteres)
-  - Descripción (opcional, texto largo)
-  - Imagen (opcional, almacenamiento local)
-- [ ] Listado paginado con búsqueda (nombre/descripción)
-- [ ] Edición y eliminación de productos
-- [ ] Notificaciones visuales para acciones (éxito/error)
+Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-### 🛍️ Gestión de Productos (CRUD Completo)
-- [ ] Creación de productos con campos:
-  - Nombre (requerido, máximo 100 caracteres)
-  - Descripción (opcional, texto largo)
-  - Precio (requerido, decimal positivo)
-  - Cantidad (requerido, entero no negativo)
-  - Categoría (seleccionar de la lista del CRUD anterior)
-  - Imagen (opcional, almacenamiento local)
-- [ ] Listado paginado con búsqueda (nombre/descripción)
-- [ ] Edición y eliminación de productos
-- [ ] Notificaciones visuales para acciones (éxito/error)
+You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
 
-### 🖥️ Interfaz de Usuario
-- [ ] Diseño responsivo con Tailwind CSS
-- [ ] Layout consistente con:
-  - Barra de navegación
-  - Área de contenido principal
-  - Mensajes de estado
-- [ ] Formularios con validación visual
-- [ ] Tabla de productos ordenable
+If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
----
+## Laravel Sponsors
 
-## ⚙️ Tecnologías Requeridas
+We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
 
-| Área         | Tecnologías                                                                 |
-|--------------|-----------------------------------------------------------------------------|
-| Backend      | Laravel (actual), Eloquent ORM, Validación nativa                               |
-| Frontend     | Blade, Tailwind CSS (actual), Alpine.js (opcional)                               |
-| Base de Datos| MySQL 8+ o PostgreSQL                                                     |
-| Control Versión| Git, con commits descriptivos en inglés                                |
+### Premium Partners
 
----
+- **[Vehikl](https://vehikl.com)**
+- **[Tighten Co.](https://tighten.co)**
+- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
+- **[64 Robots](https://64robots.com)**
+- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
+- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
+- **[Redberry](https://redberry.international/laravel-development)**
+- **[Active Logic](https://activelogic.com)**
 
-## 📦 Entregables Obligatorios
+## Contributing
 
-1. **Código Fuente** en repositorio Git con:
-   - Estructura limpia y organizada
-   - Migraciones y seeders para datos de prueba
-   - Configuración de entorno (.env.example)
+Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-2. **Documentación** en README.md que incluya:
-   - Requisitos del sistema
-   - Instrucciones de instalación detalladas
-   - Explicación de decisiones técnicas relevantes
-   - Capturas de pantalla del funcionamiento
+## Code of Conduct
 
-3. **Demo Funcional**:
-   - Video corto (2-3 min) mostrando las funcionalidades
-   - O en su defecto, GIFs demostrativos
+In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
 
----
+## Security Vulnerabilities
 
-## 📊 Criterios de Evaluación
+If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
 
+## License
 
-
-
-| Categoría          | Peso  | Detalles                                                                 |
-|--------------------|-------|--------------------------------------------------------------------------|
-| **Funcionalidad**  | 40%   | Compleción de requisitos, correcto funcionamiento                        |                       |
-| **Calidad Código** | 30%   | Estándares, mantenibilidad, eficiencia                                  |
-| **UI/UX**        | 20%   | Diseño consistente y profesional, experiencia de usuario intuitiva                            |
-| **Documentación**  | 10%   | Claridad, completitud, decisiones justificadas    
-
----
-
-## ⏱️ Tiempo y Entrega
-
-- **Duración estimada:** 6-8 horas
-- **Plazo de entrega:** 3 días hábiles desde asignación
-- **Formato de entrega:**
-  1. Fork del repositorio base
-  2. Desarrollo en branch con tu nombre (ej. `john-doe`)
-  3. Pull Request al repositorio original
-  4. Incluir en descripción del PR:
-     - Tiempo invertido
-     - Dificultades encontradas
-     - Features extras implementadas
-
----
-
-## ✨ Elementos Diferenciadores (Opcionales)
-
-Estos elementos no son obligatorios pero sumarán puntos:
-
-- Implementación de tests básicos (Feature o Unit)
-- Uso de componentes Livewire
-- Sistema de categorías anidadas
-- Exportación de productos a CSV/Excel
-- Gráficos simples de inventario (usando Chart.js)
-- Despliegue en servicio free (Heroku, Railway, etc.)
-
----
-
-## ❓ Preguntas Frecuentes
-
-**¿Puedo usar librerías adicionales?**  
-No, solo se permite utilizar las herramientas que proporcionar el framework por defecto, esto para fines de evaluación.
-
-**¿Debo implementar todos los extras?**  
-No, con los requisitos básicos es suficiente para aprobar.
-
-**¿Qué versión de Laravel debo usar?**  
-La última estable al momento de realizar la prueba.
-
----
-
-## 📌 Notas Finales
-
-- Se valorará más código limpio y funcional que features complejas
-- El diseño debe ser profesional pero no requiere ser elaborado
-- Ante dudas, tomar decisiones razonables y documentarlas
-
-¡Buena suerte! 🚀
+The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
