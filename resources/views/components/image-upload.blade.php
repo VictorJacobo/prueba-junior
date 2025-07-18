@@ -10,7 +10,7 @@
 
     <input type="file" name="{{ $name }}" id="{{ $name }}"
            @change="imagePreview = $event.target.files[0] ? URL.createObjectURL($event.target.files[0]) : {{ $currentImage ? "'$currentImage'" : 'null' }}"
-           class="w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+           class="w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm p-2 cursor-pointer">
 
     @if($helpText)
         <p class="text-gray-500 text-sm mt-1">{{ $helpText }}</p>

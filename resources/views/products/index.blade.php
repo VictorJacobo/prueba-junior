@@ -3,12 +3,12 @@
         <div class="flex justify-between items-center mb-6 px-4 sm:px-0">
             <h1 class="text-2xl font-bold">Gestión de Productos</h1>
             @if($categories->isNotEmpty())
-                <x-icon-button href="{{ route('products.create') }}" icon="<path fill-rule='evenodd' d='M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z' clip-rule='evenodd' />">
+                <x-icon-button href="{{ route('products.create') }}">
                     Nuevo Producto
                 </x-icon-button>
             @else
                 <div class="relative group inline-block" title="Primero debe crear al menos una categoría">
-                    <x-icon-button disabled href="#" icon="<path fill-rule='evenodd' d='M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z' clip-rule='evenodd' />">
+                    <x-icon-button disabled href="#">
                         Nuevo Producto
                     </x-icon-button>
                 </div>
@@ -19,10 +19,8 @@
         <x-search route="products.index" :searchValue="$search" />
 
         @if($products->isEmpty())
-            <div class="bg-white p-8 rounded-lg shadow text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
-                </svg>
+            <div class="bg-white p-8 rounded-lg shadow text-center text-gray-400">
+                <x-productos-logo class="h-12 w-12 mx-auto"/>
                 <h3 class="mt-2 text-lg font-medium text-gray-900">No hay productos registrados</h3>
                 <p class="mt-1 text-sm text-gray-500">
                     @if($categories->isNotEmpty())
@@ -33,13 +31,11 @@
                 </p>
                 <div class="mt-6">
                     @if($categories->isNotEmpty())
-                        <a href="{{ route('products.create') }}" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                            Crear primer producto
-                        </a>
+                    <x-icon-button href="{{ route('products.create') }}">Crear primer producto</x-icon-button>
+                       
                     @else
-                        <a href="{{ route('categories.create') }}" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                            Crear categoría
-                        </a>
+                    <x-icon-button href="{{ route('categories.create') }}">Crear categoría</x-icon-button>
+
                     @endif
                 </div>
             </div>

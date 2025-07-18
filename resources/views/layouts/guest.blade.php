@@ -23,7 +23,7 @@
             <p class="font-bold text-5xl">Mi Dashboard</p>
             <p>Gestiona tus productos y categorías</p>
         </div>
-
+        <x-notification/>
         <div class="w-full sm:max-w-md mt-6 px-6 py-4 bg-white shadow-md overflow-hidden sm:rounded-lg">
             {{ $slot }}
         </div>

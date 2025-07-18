@@ -13,17 +13,13 @@
 
         @if($categories->isEmpty())
             <div class="bg-white p-8 rounded-lg shadow text-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 mx-auto text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
-                </svg>
+                <x-categorias-logo class="h-12 w-12 mx-auto text-gray-400"/>
                 <h3 class="mt-2 text-lg font-medium text-gray-900">No hay categorías registradas</h3>
                 <p class="mt-1 text-sm text-gray-500">
                     Comienza creando una nueva categoría para organizar tus productos.
                 </p>
                 <div class="mt-6">
-                    <a href="{{ route('categories.create') }}" class="inline-flex items-center px-4 py-2 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                        Crear primera categoría
-                    </a>
+                    <x-icon-button href="{{ route('categories.create') }}">Crear primera categoría</x-icon-button>
                 </div>
             </div>
         @else
