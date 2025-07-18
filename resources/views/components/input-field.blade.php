@@ -29,7 +29,7 @@
     @else
         <input type="{{ $type }}" name="{{ $name }}" id="{{ $name }}"
             value="{{ old($name, $value) }}"
-            class="w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm p-2"
+            class="w-full border-gray-300 focus:border-indigo-500 focus:ring-indigo-500 rounded-md shadow-sm py-2 pl-7 pr-2"
             @if ($type === 'number') min="0" oninput="this.value = Math.abs(this.value)" @endif
             @if ($required) required @endif
             @if ($maxlength) maxlength="{{ $maxlength }}" @endif
