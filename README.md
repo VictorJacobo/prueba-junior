@@ -23,8 +23,13 @@ Sigue estos pasos para ejecutar el proyecto localmente:
 
 ### 1. Clonar el repositorio
 ```bash
-git clone https://github.com/tu-usuario/prueba-junior/tree/victor-jacobo
+git clone https://github.com/tu-usuario/prueba-junior.git
 cd prueba-junior
+```
+
+Cambiar a la rama de la demo
+```bash
+git switch victor-jacobo
 ```
 ### 2. Instalar dependencias de PHP
 ```bash
