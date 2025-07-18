@@ -26,7 +26,7 @@
                 @include('layouts.navigation')
 
             <!-- Page Content -->
-            <main class="md:ml-64 transition-all duration-300" :class="{ 'ml-0': !sidebarOpen || isMobile }">
+            <main class="h-[92vh] transition-all duration-300" :class="{ 'w-[100vw]': isMobile, 'w-[83vw]': !isMobile }"">
                 {{ $slot }}
             </main>
             </div>

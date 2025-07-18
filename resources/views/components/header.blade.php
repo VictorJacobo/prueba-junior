@@ -12,7 +12,7 @@
             </button>
 
             <!-- Logo or app name -->
-            <div :class="{ 'border-r-[1px] border-b-[1px] border-gray-300 w-64': !isMobile }" class=" flex py-4 px-2 items-center justify-center h-full">
+            <div :class="{ 'border-r-[1px] border-b-[1px] border-gray-300 w-[17vw]': !isMobile }" class=" flex py-4 px-2 items-center justify-center h-full">
             <x-application-logo class="w-[40px] fill-current text-primary" />
             <a href="{{ route('dashboard') }}" class="text-xl font-bold text-gray-800 ml-2">
                 Dashboard
