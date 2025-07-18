@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Exports\CategoriesExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class CategoryController extends Controller
 {
@@ -90,5 +92,10 @@ class CategoryController extends Controller
 
         return redirect()->route('categories.index')
             ->with('success', 'Categoría eliminada exitosamente.');
+    }
+
+    public function export()
+    {
+        return Excel::download(new CategoriesExport, 'categorias.xlsx');
     }
 }

@@ -6,6 +6,8 @@ use App\Models\Product;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use App\Exports\ProductsExport;
+use Maatwebsite\Excel\Facades\Excel;
 
 class ProductController extends Controller
 {
@@ -110,5 +112,10 @@ class ProductController extends Controller
 
         return redirect()->route('products.index')
             ->with('success', 'Producto eliminado exitosamente.');
+    }
+
+    public function export()
+    {   
+        return Excel::download(new ProductsExport, 'productos.xlsx');
     }
 }

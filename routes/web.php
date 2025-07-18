@@ -18,8 +18,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
+    Route::get('/products/export', [ProductController::class, 'export'])->name('products.export');
+    Route::get('/categories/export', [CategoryController::class, 'export'])->name('categories.export');
     Route::resource('categories', CategoryController::class);
     Route::resource('products', ProductController::class);
+
+
 });
 
 require __DIR__.'/auth.php';
