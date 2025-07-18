@@ -56,7 +56,12 @@ class CategoryController extends Controller
             'description' => 'nullable',
             'image' => 'nullable|image|max:2048'
         ]);
-
+        // Eliminar imagen si el checkbox está marcado
+        if ($request->has('remove_image') && $category->image_path) {
+            $oldImage = str_replace('/storage/', '', $category->image_path);
+            Storage::disk('public')->delete($oldImage);
+            $validated['image_path'] = null;
+        }
         if ($request->hasFile('image')) {
             // Eliminar imagen anterior si existe
             if ($category->image_path) {

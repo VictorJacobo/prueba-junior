@@ -20,8 +20,9 @@ class ProductController extends Controller
             })
             ->orderBy('created_at', 'desc')
             ->paginate(10);
+        $categories = Category::all();
 
-        return view('products.index', compact('products', 'search'));
+        return view('products.index', compact('products', 'search', 'categories'));
     }
 
     public function create()
@@ -73,6 +74,13 @@ class ProductController extends Controller
             'category_id' => 'required|exists:categories,id',
             'image' => 'nullable|image|max:2048'
         ]);
+
+        // Eliminar imagen si el checkbox está marcado
+        if ($request->has('remove_image') && $product->image_path) {
+            $oldImage = str_replace('/storage/', '', $product->image_path);
+            Storage::disk('public')->delete($oldImage);
+            $validated['image_path'] = null;
+        }
 
         if ($request->hasFile('image')) {
             // Eliminar imagen anterior si existe

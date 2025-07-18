@@ -13,16 +13,16 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
             <!-- Precio -->
-            <div>
-                <label for="price" class="block text-gray-700 font-medium mb-2">Precio *</label>
+
+
                 <div class="relative">
                     <span class="absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">$</span>
-                    <x-input-field name="price" label="" type="number"
+                    <x-input-field name="price" label="Precio" type="number"
                                  value="{{ old('price') }}"
                                  required step="0.01" min="0"
                                  class="pl-8" />
                 </div>
-            </div>
+
 
             <!-- Cantidad -->
             <x-input-field name="quantity" label="Cantidad en Stock" type="number"

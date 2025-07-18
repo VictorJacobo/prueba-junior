@@ -26,7 +26,8 @@
                 @include('layouts.navigation')
 
             <!-- Page Content -->
-            <main class="h-[92vh] transition-all duration-300" :class="{ 'w-[100vw]': isMobile, 'w-[83vw]': !isMobile }"">
+            <main class="h-[92vh] overflow-y-auto transition-all duration-300" :class="{ 'w-[100vw]': isMobile, 'w-[83vw]': !isMobile }"">
+                <x-notification/>
                 {{ $slot }}
             </main>
             </div>
