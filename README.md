@@ -102,11 +102,22 @@ Puedes iniciar sesión con las credenciales  admin@example.com y la contraseña 
 3. **Exportación a Excel** tanto de productos como categorías
 
 # 📸 Capturas de pantalla
+- Login
 ![Login](/docs/login.png)
+
+- Registro
 ![Registro](/docs/registro.png)
+
+- Dashboard
 ![Dashboard](/docs/dashboard.png)
+
+- Perfil
 ![Perfil](/docs/perfil.png)
+
+- Productos
 ![Productos](/docs/productos.png)
+
+- Categorias
 ![Categorías](/docs/categorias.png)
 
-video de la dem técnica https://drive.google.com/file/d/1MH2XQniORVeAvMIQhn6YrGVorkwPEQtM/view?usp=sharing
+Video de la demo técnica https://drive.google.com/file/d/1MH2XQniORVeAvMIQhn6YrGVorkwPEQtM/view?usp=sharing
